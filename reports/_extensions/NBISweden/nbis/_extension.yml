@@ -11,8 +11,9 @@ contributes:
       highlight-style: nbis.theme
       smooth-scroll: true
       theme: [default, nbis.scss]
+      title-block-banner: nbis_scilifelab_banner.png
       toc-location: left
-      toc-title: nbis-logo-green.svg
+      toc-title: Contents
       toc: true
     revealjs:
       code-line-numbers: false

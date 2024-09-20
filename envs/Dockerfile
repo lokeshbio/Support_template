@@ -1,7 +1,9 @@
-FROM condaforge/mambaforge:latest
-LABEL description = "Dockerfile for the #NNNN NBIS support project" \
-    author = "Lokeshwaran Manoharan" \
-    email = "lokeshwaran.manoharan@nbis.se"
+FROM condaforge/mambaforge:4.10.1-0
+LABEL org.opencontainers.image.source=https://github.com/NBISweden/repo \
+    org.opencontainers.image.description="Dockerfile for the #NNNN NBIS support project" \
+    org.opencontainers.image.licenses=MIT \
+    author="Lokeshwaran Manoharan" \
+    email="lokeshwaran.manoharan@nbis.se"
 
 
 # Use bash as shell

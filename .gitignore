@@ -15,6 +15,7 @@ envs/*
 !envs/Dockerfile
 !envs/environment.yml
 !envs/README.md
+!envs/.dockerignore
 
 intermediate/*
 !intermediate/README.md
