@@ -8,7 +8,7 @@ params:
     pi_name: "Prin Cipal"
     pi_mail: "prin.cipal@ki.se"
     organisation: "Karolinska Institutet"
-    staff_name: "Lokesh Mano"
+    staff_name: "Lokeshwaran Manoharan"
     staff_mail: "lokeshwaran.manoharan@nbis.se"
 title: "`r params$project_title`"
 author: "`r params$staff_name`"
@@ -26,7 +26,7 @@ format:
 #| echo: false
 
 affil <- paste("National Bioinformatics Infrastructure Sweden, Science for",
-    "Life Laboratory, Stockholm University")
+    "Life Laboratory, Department of Laboratory Medicine, Lund University")
 link_support <- "https://nbis.se/services/bioinformatics"
 link_uppmax <- paste("https://www.uppmax.uu.se/support/faq/",
     "general-miscellaneous-faq/acknowledging-uppmax-and-naiss/")
@@ -47,7 +47,7 @@ link_data_center <- "https://www.scilifelab.se/data/"
  * Organisation: **`r params$organisation`**
 
 # Work log
-*A brief summary if the project's key points.*
+*A brief summary of the project's key points.*
 
  * **2023-12-19:** Meeting with the group to plan data analyses
 
