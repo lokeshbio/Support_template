@@ -14,7 +14,6 @@ WORKDIR /project
 
 # Copy and install the Conda environment
 COPY environment.yml ./
-COPY code/taxa_counts.py ./
 RUN conda config --set channel_priority strict \
     && mamba env update --name base --file environment.yml \
     && mamba clean --all --force-pkgs-dirs --yes
