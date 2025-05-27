@@ -6,6 +6,29 @@ LABEL org.opencontainers.image.source=https://github.com/NBISweden/repo \
     email="lokeshwaran.manoharan@nbis.se"
 
 
+# Install system dependencies
+    ARG QUARTO_VERSION="1.7.31"
+ENV TZ=Europe/Copenhagen
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+
+RUN wget https://github.com/quarto-dev/quarto-cli/releases/download/v${QUARTO_VERSION}/quarto-${QUARTO_VERSION}-linux-amd64.deb -O quarto.deb \
+    && dpkg -i quarto.deb \
+    && rm quarto.deb \
+    && apt-get update && apt-get install -y --no-install-recommends \
+    libcurl4-openssl-dev \
+    libssl-dev \
+    libxml2-dev \
+    libudunits2-dev \
+    libgdal-dev \
+    libgeos-dev \
+    libproj-dev \
+    libgsl-dev \
+    libglpk-dev \
+    libhdf5-dev \
+    libfftw3-dev \
+    libopenblas-dev \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
 # Use bash as shell
 SHELL ["/bin/bash", "-c"]
 
