@@ -2,7 +2,7 @@
 params:
     project_title: "Project Title"
     redmine_issue: "#NNNN"
-    uppmax_project: "/b2000000"
+    naiss_project: "/b2000000"
     requester_name: "Re Quester"
     requester_mail: "re.quester@ki.se"
     pi_name: "Prin Cipal"
@@ -28,8 +28,7 @@ format:
 affil <- paste("National Bioinformatics Infrastructure Sweden, Science for",
     "Life Laboratory, Department of Laboratory Medicine, Lund University")
 link_support <- "https://nbis.se/services/bioinformatics"
-link_uppmax <- paste("https://www.uppmax.uu.se/support/faq/",
-    "general-miscellaneous-faq/acknowledging-uppmax-and-naiss/")
+link_naiss <- paste("https://www.naiss.se/policies/acknowledge/")
 link_authorship <- "http://www.icmje.org/recommendations/"
 link_agreement <- "https://nbis.se/uploads/nbis_support_useragreement_f2c52d955b.pdf"
 link_acknowledge <- paste("https://ngisweden.scilifelab.se/resources/",
@@ -57,9 +56,7 @@ link_data_center <- "https://www.scilifelab.se/data/"
 Unfortunately, NBIS does not have resources to keep any files associated with
 the support request; we kindly suggest that you safely store the results
 delivered by us. In addition, we kindly ask that you remove the files from
-UPPMAX/UPPNEX. The main storage at UPPNEX is optimized for high-speed and
-parallel access, which makes it expensive and not the right place for long-term
-archiving. Please be considerate of your fellow researchers by not taking up
+NAISS. Please be considerate of your fellow researchers by not taking up
 this expensive space.
 
 The responsibility for data archiving lies with universities and we recommend
@@ -85,15 +82,15 @@ the ethical recommendations for authorship, *i.e.* the [ICMJE
 recommendations](`r link_authorship`). If applicable, please include
 *`r params$staff_name`, `r affil`* as co-author. 
 
-In addition, Uppmax kindly asks you to [acknowledge UPPMAX and
-NAISS](`r link_uppmax`). If applicable, please add: *The computations/
+In addition, NAISS kindly asks you to [acknowledge 
+NAISS](`r link_naiss`). If applicable, please add: *The computations/
 data handling/[SIMILAR] were/was enabled by resources in project 
-`r params$uppmax_project` provided by the National Academic Infrastructure for 
-Supercomputing in Sweden (NAISS) at UPPMAX, funded by the Swedish Research 
+`r params$naiss_project` provided by the National Academic Infrastructure for 
+Supercomputing in Sweden (NAISS), funded by the Swedish Research 
 Council through grant agreement no. 2022-06725*
 
 In any and all publications based on data from NGI Sweden, the authors
-must [acknowledge SciLifeLab, NGI, VR and UPPMAX](`r link_acknowledge`).
+must [acknowledge SciLifeLab, NGI, VR and NAISS](`r link_acknowledge`).
 
 ## Closing procedures
 You should soon be contacted by one of our managers with a request to close down 
