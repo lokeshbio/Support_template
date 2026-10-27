@@ -6,5 +6,17 @@ LABEL org.opencontainers.image.source=https://github.com/NBISweden/Support_NNNN 
     org.opencontainers.image.licenses=MIT \
     author="Lokeshwaran Manoharan" \
     email="lokeshwaran.manoharan@nbis.se"
-    
+
+USER root
+
+RUN install2.r --error --skipinstalled \
+    -r https://reditorsupport.r-universe.dev \
+    -r https://nx10.r-universe.dev \
+    -r https://cloud.r-project.org \
+    sess
+
+RUN /usr/local/lib/R/site-library/littler/examples/installBioc.r --error mixOmics
+
+USER rstudio
+
 CMD ["/bin/bash"] 
