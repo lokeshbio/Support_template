@@ -1,7 +1,7 @@
 {
     "image": "ghcr.io/nbisweden/support-NNNN",
     "customizations": {
-        "vscodium": {
+        "vscode": {
         "extensions": [
             "streetsidesoftware.code-spell-checker", "quarto.quarto",
             "formulahendry.code-runner", "oderwat.indent-rainbow",
@@ -11,13 +11,18 @@
             "nextflow.nextflow", "peakchen90.open-html-in-browser",
             "christian-kohler.path-intellisense", "searking.preview-vscode",
             "ms-python.python", "reditorsupport.r",
-            "mechatroner.rainbow-csv", "snakemake.snakemake-lang",
-            "ban.spellright", "mikhail-arkhipov.r"
+            "mechatroner.rainbow-csv", "ban.spellright",
+            "anthropic.claude-code"
             ],
         "settings": {
-            "r.rterm.linux": "/usr/local/bin/R",
+            "r.interactive.executionTarget": "terminal",
+            "r.consolePath": "/opt/conda/bin/R",
+            "r.consoleArgs": ["--no-save", "--no-restore"],
+            "r.alwaysUseActiveTerminal": false,
+            "r.bracketedPaste": true,
+            "r.sessionWatcher": true,
             "quarto.usePipQuarto": false,
-            "quarto.path": "/usr/local/bin/quarto",
+            "quarto.path": "/opt/quarto/bin/quarto",
             "quarto.render.renderOnSaveShiny": false,
             "quarto.render.previewType": "external",
             "terminal.integrated.inheritEnv": false,

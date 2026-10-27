@@ -1,0 +1,10 @@
+# DOCKER FILE FOR SUPPORT PROJECT NNNN
+# 2026 Lokesh Mano
+FROM ghcr.io/lokeshbio/support_template:1.0
+LABEL org.opencontainers.image.source=https://github.com/NBISweden/Support_NNNN \
+    org.opencontainers.image.description="Dockerfile for the #NNNN NBIS support project" \
+    org.opencontainers.image.licenses=MIT \
+    author="Lokeshwaran Manoharan" \
+    email="lokeshwaran.manoharan@nbis.se"
+    
+CMD ["/bin/bash"] 

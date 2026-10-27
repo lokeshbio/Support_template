@@ -12,7 +12,7 @@ data/*
 !data/README.md
 
 envs/*
-!envs/Dockerfile
+!envs/Dockerfile*
 !envs/environment.yml
 !envs/README.md
 !envs/.dockerignore
